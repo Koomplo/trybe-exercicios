@@ -42,9 +42,9 @@ let player2 =
 //Bônus: Crie a condição utilizando operador ternário.
 
 
-let idades = 25;
+let age = 28;
 
-if (idades >= 18){
+if (age >= 18){
     console.log("A pessoa é maior de idade")
 } else {
     console.log("A pessoa é menor de idade")
