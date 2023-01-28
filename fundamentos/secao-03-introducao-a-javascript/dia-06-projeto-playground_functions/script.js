@@ -69,7 +69,7 @@ let calcAllAreas = (base, height, form) => {
         let area = calcRectangleArea(base, height);
         return `O valor da area do retângulo é de: ${area}`;
     } else {
-        return "Não foi possivel fazer o cálculo, insita uma forma geométrica válida.";
+        return "Não foi possivel fazer o cálculo, insira uma forma geométrica válida.";
     }
 }
 
