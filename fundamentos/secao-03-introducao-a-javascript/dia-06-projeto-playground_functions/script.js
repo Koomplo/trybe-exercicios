@@ -76,3 +76,4 @@ let calcAllAreas = (base, height, form) => {
 // console.log(calcTriangleArea(10, 50, "triângulo"));
 // console.log(calcRectangleArea(10, 50, "retângulo"));
 // console.log(calcAllAreas(10, 50, "quadrado"));
+
