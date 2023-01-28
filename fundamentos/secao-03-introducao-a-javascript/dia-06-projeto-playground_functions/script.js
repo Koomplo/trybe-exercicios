@@ -40,5 +40,31 @@ const footballPoints = (wins, ties) => (wins * 3) + (ties * 1);
 // console.log(footballPoints(0, 0));
 
 // Crie uma função que calcula o número de repetições do maior número.
-// Imeplemente a função highestCount que deverá retornar a quantidade de vezes que o maior número se repete um array de números.
+// Implemente a função highestCount que deverá retornar a quantidade de vezes que o maior número se repete um array de números.
+
+// Deixar pra depois, mais pesquisa.
+
+
+// Crie 3 funções para calcular as áreas de um triângulo e de um retangulo
+// Implemente 3 funções. Uma função que calcula a área de un triângulo, outra que calcula a área de un retangulo e uma função que exiba
+// o resultado desses calculos de acordo com o parâmetro passado para função.
+// A função calcTriangleArea recebe dois parâmetros, sendo eles, o valor da base (base) e outro da altura (height) e retorna o calculo da area.
+// Calculo area do triângulo: (base * altura) / 2
+// A função calcRectangleArea também recebe 2 parâmetros, sendo eles, o valor da base (base) e outro da altura (height) de um retângulo qualquer e retorna o calculo da area.
+// Realize o calculo da area total do retângulo utilizando a fórmula: (base * altura).
+// A função calcAllAreas que recebe 3 parâmetros sendo eles o valor da base (base), o valor da altura (height) e a forma geométrica (form)
+// podendo ser triângulo ou retângulo.
+// Se o parâmetro passado em form for "triângulo" o retorno deve ser uma string com o seguinte formato: O valor da area do triângulo é de: valorDaArea
+// Se o parâmetro passado em form for "retângulo" o retorno deve ser uma string com o seguinte formato: O valor da area do retângulo é de: valorDaArea
+// Caso não seja nenhum parametro acima deve retonar uma string com o seguinte formato: Não foi possivel fazer o cálculo, insita uma forma geométrica válida.
+// A função calcAllAreas chame as funções calcTriangleArea e calcRectangleArea para exibir o resultado esperado.
+
+let calcTriangleArea = (base, height) => (base * height) / 2;
+let calcRectangleArea = (base, height) => base * height;
+let calcAllAreas = (base, height, form) => {
+    if (form === 'triângulo') {
+        let area = calcTriangleArea(base, height);
+        return `O valor da area do triângulo é de: ${area}`;
+    }
+}
 
