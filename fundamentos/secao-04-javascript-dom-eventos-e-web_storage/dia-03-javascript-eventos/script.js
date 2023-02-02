@@ -42,7 +42,7 @@ window.onload = () => {
 
     for (car of cars) {
         car.addEventListener('click', (event) => {
-            const selected = documento.querySelector('.selected');
+            const selected = document.querySelector('.selected');
             if (selected) {
                 selected.classList.remove('selected');
             }
