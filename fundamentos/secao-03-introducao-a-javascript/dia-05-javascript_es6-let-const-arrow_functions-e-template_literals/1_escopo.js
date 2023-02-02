@@ -1,0 +1,5 @@
+// Escopo
+
+if (true){
+    
+}
