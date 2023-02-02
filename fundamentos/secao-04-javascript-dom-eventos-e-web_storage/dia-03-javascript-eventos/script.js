@@ -17,12 +17,9 @@ window.onload = () => {
     resetBtn.addEventListener('click', resetCars);
 
     startBtn.addEventListener('click', () => {
-        player1.style.marginLeft = parseInt(player1.style.marginLeft) + Math.random() * 100 + "px";
-        player2.style.marginLeft = parseInt(player2.style.marginLeft) + Math.random() * 100 + "px";
+        player1.style.marginLeft = parseInt(player1.style.marginLeft) + Math.random() * 300 + "px";
+        player2.style.marginLeft = parseInt(player2.style.marginLeft) + Math.random() * 300 + "px";
 
-// Corrida Iniciada
-// Criando competição
-        
     const player1Win = parseInt(player1.style.marginLeft) > window.innerWidth;
     const playe2Win = parseInt(player2.style.marginLeft) > window.innerHeight;
 
@@ -38,5 +35,31 @@ window.onload = () => {
         resetCars();
     }
 
-    } )
+    });
+
+    const cars = document.querySelectorAll('.car');
+    const alternatives = document.querySelectorAll('#players img');
+
+    for (car of cars) {
+        car.addEventListener('click', (event) => {
+            const selected = documento.querySelector('.selected');
+            if (selected) {
+                selected.classList.remove('selected');
+            }
+            event.target.classList.add('selected');
+
+        });
+
+    for (persona of alternatives) {
+        persona.addEventListener('click', (event) => {
+            const selected = document.querySelector('.selected');
+            if (selected) {
+                selected.style.backgroundImage = `url(${event.target.src})`;
+                selected.classList.remove('selected');
+            }
+        })
+    }
+
+        }
+
 }
