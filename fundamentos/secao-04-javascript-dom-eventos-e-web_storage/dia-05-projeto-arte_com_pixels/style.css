@@ -5,6 +5,10 @@
     margin-right: 3px;
     border: 2px solid black;
   }
+  
+  #color-palette {
+    display: inline-block;
+  }
 
   #button-random-color {
     background: #7FA3CB;
@@ -30,4 +34,6 @@
     display: inline-block;
     cursor: pointer;
     text-align: center;
- }
+    margin: 20px;
+    margin-left: 0px;
+}

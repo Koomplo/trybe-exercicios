@@ -29,3 +29,13 @@ const cor3 = document.querySelectorAll(".color")[3];
          }
         return cor;
     }
+
+//Teste criar div com javascript (Não deu certo)
+/*     const pixelBoard = document.getElementById("pixel-board");
+
+    for (let index = 0; index < 25; index += 1) {
+      const pixel = document.createElement("div");
+      pixel.classList.add("pixel");
+      pixel.style.backgroundColor = "white";
+      pixelBoard.appendChild(pixel);
+    } */
