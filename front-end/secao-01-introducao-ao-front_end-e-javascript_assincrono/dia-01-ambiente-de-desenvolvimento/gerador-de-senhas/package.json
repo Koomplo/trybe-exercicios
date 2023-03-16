@@ -4,8 +4,17 @@
   "description": "Gerador de senhas seguro usando nanoid",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite --open",
+    "lint": "eslint ./src"
   },
   "author": "Koomplo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nanoid": "^4.0.1",
+    "vite": "^4.2.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.36.0"
+  }
 }
