@@ -1,5 +1,21 @@
 {
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "name": "dia-02-nodejs-api_rest-com-express",
+  "description": "",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "dev": "nodemon .",
+    "serve": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
