@@ -1,6 +1,3 @@
-const users = [
-    { name: 'João', age: 25 },
-    { name: 'Maria', age: 27 }
-];
+const users = [];
 
 module.exports = users;

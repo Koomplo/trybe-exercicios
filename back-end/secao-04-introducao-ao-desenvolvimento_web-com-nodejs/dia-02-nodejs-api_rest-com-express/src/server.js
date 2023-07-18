@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 const express = require('express');
 const users = require('./data');
 
@@ -15,7 +16,13 @@ app.get('/users', (_request, response) => {
 
 app.post('/users', (request, response) => {
     const { name, age } = request.body;
-    const user = { name, age };
+
+    if(!name || !age) return response.status(400).send('Dados inválidos!');
+    const user = { 
+        id: crypto.randomUUID(),
+        name,
+        age 
+        };
     users.push(user);
     response.status(201).json(user);
 });
